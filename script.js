@@ -1,13 +1,16 @@
 const dice = document.getElementById("dice");
+dice.addEventListener("click", getAdvice);
 
 async function getAdvice() {
-  //   event.preventDefault();
   const response = await fetch("	https://api.adviceslip.com/advice");
-  //   event.preventDefault();
 
   const wisdomReturned = await response.json();
 
+  const advice = wisdomReturned.slip.advice;
+  const id = wisdomReturned.slip.id;
+
+  document.getElementById("p").innerHTML = advice;
+  document.getElementById("h2").innerHTML = "ADVICE " + "#" + id;
+
   console.log(wisdomReturned);
 }
-
-getAdvice();
