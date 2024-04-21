@@ -15,9 +15,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    
+    max-width: 30rem;
+    overflow: visible;   
 }
+
+
 
 .container-content {
     border-radius: 10px;
@@ -26,14 +28,15 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
-    
-
+    align-items: center;
+    padding-bottom: 5rem;
+   
 }
 
 h2 {
     color: hsl(150, 100%, 66%);
     font-size: 1rem;
+    letter-spacing: 1.2px;
     
 }
 
@@ -55,8 +58,20 @@ p {
 
 .dice {
     background-color: hsl(150, 100%, 66%);
-    
-    
+    border-radius: 50px;
+    width: 6rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    margin-top: 25rem;
+    margin-top: 270px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;   
+}
+
+
+.dice:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px 5px hsl(150, 100%, 66%);
+    
 }
