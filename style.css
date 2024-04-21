@@ -15,8 +15,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 30rem;
-    overflow: visible;   
+    max-width: 40rem;
+     
 }
 
 
@@ -29,7 +29,9 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding-bottom: 5rem;
+    padding-bottom: 50rem;
+    padding: 2.5rem 2.5rem 5rem 2.5rem
+    
    
 }
 
@@ -45,7 +47,7 @@ p {
     text-align: center;
     color:hsl(193, 38%, 86%);
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.12rem;
     padding: .2rem;
 
 }
@@ -63,10 +65,18 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-top: 25rem;
-    margin-top: 270px; 
+    margin-top: 280px; 
     left: 50%; 
     transform: translateX(-50%);
     position: absolute;   
+}
+
+
+
+@media screen and  (max-width: 401px) {
+    .dice {
+        margin-top: 300px
+    }
 }
 
 
