@@ -1,3 +1,5 @@
+const dice = document.getElementById("dice");
+
 async function getAdvice() {
   //   event.preventDefault();
   const response = await fetch("	https://api.adviceslip.com/advice");
